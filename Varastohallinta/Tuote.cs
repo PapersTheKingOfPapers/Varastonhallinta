@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace Varastohallinta
 {
-    public class Tuotteet
+    public class Tuote
     {
         [Key]
         public int? id { get; set; }

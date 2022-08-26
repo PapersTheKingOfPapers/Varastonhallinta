@@ -9,7 +9,7 @@ namespace Varastohallinta
 {
     public class Varastohallinta : DbContext
     {
-        public DbSet<Tuotteet> Tuotteet { get; set; }
+        public DbSet<Tuote>? Tuotteet { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
