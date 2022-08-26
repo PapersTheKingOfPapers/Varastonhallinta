@@ -58,7 +58,6 @@ static bool AddProduct()
 
         Tuote tuote = new()
         {
-            id = tuotteet.Max(t => t.id)+1,
             tuoteNimi = productName,
             tuotenHinta = productPrice,
             varastoSaldo = productAmount
@@ -96,7 +95,7 @@ static bool ChangeProductName()
             int affected = varastohallinta.SaveChanges();
             if (affected == 1)
             {
-                Console.WriteLine("Tuotteen nimi vaihdettu id:llä" + id);
+                Console.WriteLine("Tuotteen nimi vaihdettu id:llä " + id);
             }
             return (affected == 1);
         }
