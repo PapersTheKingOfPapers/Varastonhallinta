@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore; //For Database
 
 namespace Varastohallinta
 {
-    public class Varastohallinta : DbContext
+    public class Varastonhallinta : DbContext
     {
         public DbSet<Tuote>? Tuotteet { get; set; }
 
