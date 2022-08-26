@@ -24,7 +24,7 @@ while (true)
     }
     else if(vastaus == 4)
     {
-
+        ChangeProductName();
     }
 }
 
@@ -58,7 +58,7 @@ static bool AddProduct()
 
         Tuote tuote = new()
         {
-            id = tuotteet?.Count()+1,
+            id = tuotteet.Max(t => t.id)+1,
             tuoteNimi = productName,
             tuotenHinta = productPrice,
             varastoSaldo = productAmount
